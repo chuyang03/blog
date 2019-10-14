@@ -22,4 +22,10 @@ public class IndexController {
         System.out.println("------index-------");
         return "index";
     }
+
+    //去到博客详情页面
+    @GetMapping("blog")
+    public String blog(){
+        return "blog";
+    }
 }

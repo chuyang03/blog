@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<!--head(~{::title} 表示将当前页面的title标签的内容传递到_fragments页面，
+th:replace 标签指的是将当前标签的内容替换为_fragments页面head标签的内容-->
 <head th:replace="_fragments :: head(~{::title})">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +12,7 @@
 <body>
 
   <!--导航-->
+  <!--  th:replace="_fragments :: menu(1)"   表示默认激活哪一个选项卡-->
   <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
