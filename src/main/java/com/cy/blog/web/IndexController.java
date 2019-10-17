@@ -24,7 +24,7 @@ public class IndexController {
     }
 
     //去到博客详情页面
-    @GetMapping("blog")
+    @GetMapping("/blog")
     public String blog(){
         return "blog";
     }
